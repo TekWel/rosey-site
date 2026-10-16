@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rosey</title>
+<style>
+  :root { --ink: #1f2a2e; --muted: #5a6a70; --line: #d9e0e2; --paper: #fbfcfc; --accent: #2f6f73; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e4ecee; --muted: #9fb0b5; --line: #31403f; --paper: #141b1c; --accent: #7fc4c7; }
+  }
+  body { margin: 0; background: var(--paper); color: var(--ink);
+         font: 17px/1.6 Georgia, "Times New Roman", serif; padding: 48px 16px; }
+  main { max-width: 38rem; margin: 0 auto; }
+  h1 { font-size: 2.2rem; margin: 0 0 4px; letter-spacing: 0.01em; }
+  .sub { color: var(--muted); margin: 0 0 32px; font-family: system-ui, sans-serif; font-size: 0.95rem; }
+  h2 { font-size: 1.1rem; margin: 32px 0 8px; font-family: system-ui, sans-serif; }
+  ul { padding-left: 1.2rem; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line);
+           color: var(--muted); font-family: system-ui, sans-serif; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rosey</h1>
+  <p class="sub">A private assistant for one household</p>
+
+  <p>Rosey helps one family keep track of their lists, notes and reminders. The
+  family talks to it by text message. It runs on the family's own server and is
+  not offered to anyone else; there is no sign-up.</p>
+
+  <h2>What Rosey does with Google</h2>
+  <ul>
+    <li>Reads the household's own Gmail when a parent asks about a message. It
+    has read-only access, so it cannot send, delete or change email.</li>
+    <li>Reads the household's Google Calendar to answer questions about plans.</li>
+    <li>Adds a calendar event only after a parent replies yes to a proposed
+    event. It never deletes events or invites anyone.</li>
+  </ul>
+
+  <p><a href="privacy.html">Privacy policy</a></p>
+
+  <footer>Rosey is a personal project, not a commercial service.</footer>
+</main>
+</body>
+</html>
