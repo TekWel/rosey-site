@@ -24,7 +24,7 @@
 <body>
 <main>
   <h1>Privacy policy</h1>
-  <p class="sub">Rosey &middot; effective 16 October 2026</p>
+  <p class="sub">Rosey &middot; effective 17 October 2026</p>
 
   <h2>Who uses Rosey</h2>
   <p>Rosey is used only by the members of one household. It has no other users
@@ -37,21 +37,30 @@
     <li><strong>Google Calendar.</strong> Rosey can see the account's list of
     calendars, read their events, and add an event after a parent confirms it
     in a text. It does not delete events or invite other people.</li>
+    <li><strong>One store's receipts in a family member's own Gmail.</strong>
+    With that person's consent, Rosey reads, read-only, the receipt emails
+    from one store (H-E-B) in their account. It does not read their other
+    mail, and it cannot send, delete or change email.</li>
   </ul>
 
   <h2>How the data is used</h2>
   <p>Only to answer the household's own questions and requests in their
   private conversations with Rosey. Rosey fetches mail and calendar
   information when someone asks. It does not copy the mailbox or calendar into
-  another store. It keeps only notes a family member asks it to save, in the
-  household's private records.</p>
+  another store. It keeps notes a family member asks it to save and, from
+  store receipt emails, purchase records (items, prices, dates and stores), in
+  the household's private records, so the family can see what it buys most.</p>
 
   <h2>Where it is processed</h2>
   <p>Rosey runs on the household's own private server. The Google sign-in token
   is stored there and can be read only by Rosey's service account. To write a
   reply, Rosey sends the relevant text to the AI model the household uses
   through its own ChatGPT plan from OpenAI, under the household's agreement
-  with OpenAI.</p>
+  with OpenAI. To turn store receipts into purchase records, Rosey first
+  removes email addresses, phone numbers, card digits, street addresses and
+  order numbers, then sends the rest of the receipt text to Anthropic's Claude
+  through the household's own Claude plan, under the household's agreement
+  with Anthropic.</p>
 
   <h2>Sharing</h2>
   <p>Rosey does not sell Google user data, does not use it for advertising, and
